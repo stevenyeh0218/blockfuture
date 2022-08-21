@@ -10,22 +10,23 @@
     <meta name="keywords" content="">
     <meta name="author" content="Block Future">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <link rel="shortcut icon" href="./img/titlelogo.ico">
+    <link rel="shortcut icon" href="./../img/titlelogo.ico">
 
-    <link rel="stylesheet" href="./script/css/dashboard.css" />
-    <link rel="stylesheet" href="./script/css/mediaQuery.css" />
-    <link rel="stylesheet" href="./script/css/animate.css" />
-    <link rel="stylesheet" href="./vendor/aos-master/dist/aos.css" />
-    <link rel="stylesheet" href="./vendor/fontawesome-free-5.0.9/web-fonts-with-css/css/fontawesome-all.css">
-    <link rel="stylesheet" href="./vendor/bootstrap-4.0.0/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../script/css/dashboard.css" />
+    <link rel="stylesheet" href="../script/css/mediaQuery.css" />
+    <link rel="stylesheet" href="../script/css/animate.css" />
+    <link rel="stylesheet" href="../vendor/aos-master/dist/aos.css" />
+    <link rel="stylesheet" href="../vendor/fontawesome-free-5.0.9/web-fonts-with-css/css/fontawesome-all.css">
+    <link rel="stylesheet" href="../vendor/bootstrap-4.0.0/dist/css/bootstrap.css" />
 
 </head>
 
 <body>
 
+
     <nav id="dashboard-menu">
-        <a href="index.html" id="dashboard-logo">
-            <img src="img/svg/logo.svg" class="brand-logo">
+        <a href="../index.html" id="dashboard-logo">
+            <img src="../img/svg/logo.svg" class="brand-logo">
             <div class="word-logo d-flex align-items-center justify-content-center">區塊未來</div>
         </a>
 
@@ -65,7 +66,7 @@
                     </ul>
                 </li>
                 <li id="logout" class="menu-item">
-                    <a href="index.html" class="item-link d-flex align-items-center justify-content-center">登出<span></span></a>
+                    <a href="../index.html" class="item-link d-flex align-items-center justify-content-center">登出<span></span></a>
                 </li>
             </ul>
         </div>
@@ -73,7 +74,7 @@
     <section id="dashboard-slide">
         <div class="descript d-flex flex-column align-items-center justify-content-center">
             <div class="vert-center d-flex flex-column align-items-center justify-content-center">
-                <div class="dashboard-title title-btn"></div>
+                <div class="wallet-title title-btn"></div>
             </div>
         </div>
     </section>
@@ -81,61 +82,22 @@
         <div class="content">
             <div class="about-inner d-flex justify-content-center">
                 <div class="inview">
-                    <div class="inview-img" src="img/window-pattern-retina.png"></div>
+                    <div class="inview-img" src="../img/window-pattern-retina.png"></div>
                     <i class="bottomBtn fa fa-long-arrow-alt-down"></i>
                 </div>
                 <div class="photo"></div>
-                <div class="text-content" data-aos="flip-right" data-aos-duration="600">
-                    <h3>公告</h3>
-                    <div class="announcement d-flex flex-column align-items-baseline justify-content-center">
-                        <div class="list d-flex align-items-center">
-                            <i class="fa fa-bullhorn icon-style"></i>
-                            <div class="list-content">
-                                <div class="header d-flex align-items-center justify-content-between flex-wrap">
-                                    <h5 class="title">區塊未來公告</h5>
-                                    <div class="date">Mar 31, 2018</div>
-                                </div>
-                                <div class="description">區塊未來公告</div>
-                            </div>
-                        </div>
-                        <div class="list d-flex align-items-center">
-                            <i class="fa fa-bullhorn icon-style"></i>
-                            <div class="list-content">
-                                <div class="header d-flex align-items-center justify-content-between flex-wrap">
-                                    <h5 class="title">區塊未來聲明稿</h5>
-                                    <div class="date">Mar 27, 2018</div>
-                                </div>
-                                <div class="description">區塊未來聲明稿</div>
-                            </div>
-                        </div>
-                        <div class="list d-flex align-items-center">
-                            <i class="fa fa-bullhorn icon-style"></i>
-                            <div class="list-content">
-                                <div class="header d-flex align-items-center justify-content-between flex-wrap">
-                                    <h5 class="title">區塊未來公告</h5>
-                                    <div class="date">Mar 12, 2018</div>
-                                </div>
-                                <div class="description">中華電信代表號轉移</div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="text-content no-announcement" data-aos="flip-right" data-aos-duration="600">
+                    <h3>區塊未來 引領你的未來</h3>
                 </div>
                 <div class="line"></div>
             </div>
         </div>
 
     </section>
-    <section id="dashboard-table" class="dashboard" data-aos="fade-up">
-        <div class="auto-transaction d-flex align-items-center justify-content-center">
-            <h3>自動交易</h3>
-            <button type="button" class="btn-style auto-btn">開始</button>
-            <div class="spinner">
-                <div class="cssload-box-loading"></div>
-            </div>
-        </div>
-        <div class="analysis-table  d-flex flex-row flex-wrap">
+    <section id="dashboard-table" class="wallet" data-aos="fade-up">
+        <div class="analysis-table wallet-table">
             <div class="total-assets table-content">
-                <h3>總資產</h3>
+                <h3>錢包地址</h3>
                 <table>
                     <thead>
                         <th>
@@ -146,64 +108,49 @@
                             數量
                             <i class="fa fa-sort-amount-up icon-style amount-btn"></i>
                         </th>
+                        <th class="function-btn"></th>
+                        <th class="function-btn"></th>
                     </thead>
                     <tbody>
                         <tr>
                             <td>ETH</td>
                             <td>0</td>
+                            <td class="btn-style">
+                                <button type="button">充值</button>
+                            </td>
+                            <td class="btn-style">
+                                <button type="button">提現</button>
+                            </td>
                         </tr>
                         <tr>
                             <td>BTC</td>
                             <td>0</td>
+                            <td class="btn-style">
+                                <button type="button">充值</button>
+                            </td>
+                            <td class="btn-style">
+                                <button type="button">提現</button>
+                            </td>
                         </tr>
                         <tr>
                             <td>LTC</td>
                             <td>0</td>
+                            <td class="btn-style">
+                                <button type="button">充值</button>
+                            </td>
+                            <td class="btn-style">
+                                <button type="button">提現</button>
+                            </td>
                         </tr>
                         <tr>
                             <td>BCH</td>
                             <td>0</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="value-record table-content">
-                <h3>獲利紀錄</h3>
-                <table>
-                    <thead>
-                        <th>
-                            幣種
-                            <i class="fa fa-sort-amount-up icon-style amount-btn"></i>
-                        </th>
-                        <th>
-                            數量
-                            <i class="fa fa-sort-amount-up icon-style amount-btn"></i>
-                        </th>
-                        <th>
-                            時間
-                            <i class="fa fa-sort-amount-up icon-style amount-btn"></i>
-                        </th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>ETH</td>
-                            <td>0</td>
-                            <td>Mar,13,2018</td>
-                        </tr>
-                        <tr>
-                            <td>BTC</td>
-                            <td>0</td>
-                            <td>Mar,13,2018</td>
-                        </tr>
-                        <tr>
-                            <td>LTC</td>
-                            <td>0</td>
-                            <td>Mar,13,2018</td>
-                        </tr>
-                        <tr>
-                            <td>BCH</td>
-                            <td>0</td>
-                            <td>Mar,13,2018</td>
+                            <td class="btn-style">
+                                <button type="button">充值</button>
+                            </td>
+                            <td class="btn-style">
+                                <button type="button">提現</button>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -231,11 +178,11 @@
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="./script/js/nav.js"></script>
-<script src="./script/js/about.js"></script>
-<script src="./script/js/scroll.js"></script>>
-<script src="./script/js/table.js"></script>
-<script src="./vendor/aos-master/dist/aos.js"></script>
+<script src="../script/js/nav.js"></script>
+<script src="../script/js/about.js"></script>
+<script src="../script/js/scroll.js"></script>
+<script src="../script/js/table.js"></script>
+<script src="../vendor/aos-master/dist/aos.js"></script>
 <script>
     AOS.init({
         easing: 'ease-in-out-sine'

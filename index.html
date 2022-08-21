@@ -40,8 +40,8 @@
                         <a href="/" class="home-link">
                             <i class="fa fa-home"></i>
                         </a>
-                        <a href="dashboard.html" id="dashboard" class="menu-item">儀表板<span></span></a>
-                        <a href="login.html" id="login" class="menu-item">登入<span></span></a>
+                        <a href="page/dashboard.html" id="dashboard" class="menu-item">儀表板<span></span></a>
+                        <a href="page/login.html" id="login" class="menu-item">登入<span></span></a>
                         <a href="index.html" id="logout" class="menu-item">登出<span></span></a>
                         <a href="./" id="question" class="menu-item">Q&A<span></span></a>
                         <a href="./" id="support" class="menu-item">支援<span></span></a>
@@ -148,6 +148,10 @@
 <script>
     AOS.init({
         easing: 'ease-in-out-sine'
+    });
+
+    $('.sign-in').click(function () {
+        window.location.href = "page/login.html";
     });
 </script>
 
